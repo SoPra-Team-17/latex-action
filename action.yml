@@ -1,6 +1,6 @@
 # action.yml
-name: 'Uberblatt'
-description: 'Build LaTeX in each directory and deploy PDFs to GitHub Pages'
+name: 'SoPra LaTex Build'
+description: 'Build LaTeX in root directory and deploy PDF to GitHub Pages'
 branding:
   icon: 'file-text'
   color: 'blue'
