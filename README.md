@@ -1,6 +1,6 @@
 # Uberblatt
-This action runs `make` in every sub-directory of the repository.
-It also lists the generated files in a `index.html` file and saves everything to the `build` directory.
+This action runs `make` in the repository.
+It saves build artifacts to the `build` directory.
 To know which files to deploy, the Makefile shall print `ARTIFACTS:` followed by a comma separated list of file names that should be deployed to stdout:
 
 ```Makefile
@@ -30,7 +30,7 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v4
     - name: Compile and Deploy LaTeX to PDF
-      uses: ottojo/uberblatt-action@master
+      uses: SoPra-Team-17/latex-action@master
     - name: GitHub Pages Deploy
       uses: maxheld83/ghpages@v0.2.1
       env:
